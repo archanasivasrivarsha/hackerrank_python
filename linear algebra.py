@@ -1,0 +1,13 @@
+Python 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> import numpy as np
+... 
+... n = int(input())
+... 
+... matrix = []
+... for _ in range(n):
+...     matrix.append(list(map(float, input().split())))
+... 
+... determinant = np.linalg.det(matrix)
+... 
+... print(round(determinant, 2))
